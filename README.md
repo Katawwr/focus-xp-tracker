@@ -2,6 +2,14 @@
 
 A Chrome extension that gamifies web browsing by awarding XP for clicks, typing, and scrolling.
 
+## Preview
+
+![Extension Interface](images/popup-interface.png)
+*Top of the main extension popup showing XP tracking*
+
+![XP Bar Display](images/xp-bar-display.png)
+*On-screen XP bar with level progression and XP drops*
+
 ## Installation
 
 1. Go to `chrome://extensions/` and enable "Developer mode"
