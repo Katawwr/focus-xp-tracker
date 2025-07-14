@@ -45,3 +45,9 @@ const XP_VALUES = {
   scroll: 1     // Change scroll XP
 };
 ```
+
+## License
+
+MIT License
+
+---
