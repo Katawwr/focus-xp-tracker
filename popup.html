@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-container">
+    <h2>Focus XP Tracker</h2>
+    
+    <div class="tracker-selector">
+      <select id="trackerSelect"></select>
+      <button id="manageTrackers" class="small-btn">Manage</button>
+    </div>
+    
+    <div class="stats-section">
+      <div class="stat-row">
+        <span class="label">Level:</span>
+        <span id="level" class="value">1</span>
+      </div>
+      <div class="stat-row">
+        <span class="label">Total XP:</span>
+        <span id="totalXp" class="value">0</span>
+      </div>
+      <div class="stat-row">
+        <span class="label">Session XP:</span>
+        <span id="sessionXp" class="value">0</span>
+      </div>
+      <div class="stat-row">
+        <span class="label">Status:</span>
+        <span id="status" class="value">Tracking</span>
+      </div>
+    </div>
+
+    <div class="actions-section">
+      <button id="viewStats" class="action-btn">View All Stats</button>
+      <button id="pauseToggle" class="action-btn">Pause Tracking</button>
+      <button id="reset" class="action-btn danger">Reset Current Tracker</button>
+    </div>
+
+    <div class="settings-section">
+      <h3>Settings</h3>
+      <label class="toggle-option">
+        <input type="checkbox" id="showXpDrops" checked>
+        <span>Show XP Drops</span>
+      </label>
+      <label class="toggle-option">
+        <input type="checkbox" id="showLevelUp" checked>
+        <span>Show Level Up Animation</span>
+      </label>
+      <label class="toggle-option">
+        <input type="checkbox" id="showGoldenTrim" checked>
+        <span>Show Golden Trim</span>
+      </label>
+    </div>
+
+    <div class="blocklist-section">
+      <h3>Blocked Websites</h3>
+      <div class="blocklist-info">No XP will be gained on these sites:</div>
+      <div id="blockedSites" class="blocked-sites-list"></div>
+      <div class="add-site">
+        <input type="text" id="newSite" placeholder="example.com" />
+        <button id="addSite" class="small-btn">Add</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tracker Management Modal -->
+  <div id="trackerModal" class="modal" style="display: none;">
+    <div class="modal-content">
+      <h3>Manage Trackers</h3>
+      <div id="trackerList" class="tracker-list"></div>
+      <div class="add-tracker">
+        <input type="text" id="newTrackerName" placeholder="Enter tracker name" maxlength="20" />
+        <button id="addTracker" class="small-btn">Add Tracker</button>
+      </div>
+      <button id="closeModal" class="action-btn">Close</button>
+    </div>
+  </div>
+
+  <!-- Stats Modal -->
+  <div id="statsModal" class="modal" style="display: none;">
+    <div class="modal-content">
+      <h3>All Tracker Stats</h3>
+      <div id="allStats" class="all-stats"></div>
+      <button id="closeStatsModal" class="action-btn">Close</button>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

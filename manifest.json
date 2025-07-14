@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Focus XP Tracker",
+  "version": "1.0.0",
+  "description": "Track your productivity with OSRS-style XP drops",
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
