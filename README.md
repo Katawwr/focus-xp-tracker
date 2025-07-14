@@ -4,11 +4,21 @@ A Chrome extension that gamifies web browsing by awarding XP for clicks, typing,
 
 ## Preview
 
-![Extension Interface](images/popup-interface.png)
-*Top of the main extension popup showing XP tracking*
-
-![XP Bar Display](images/xp-bar-display.png)
-*On-screen XP bar with level progression and XP drops*
+<table>
+<tr>
+<td width="50%">
+<img src="images/popup-interface.png" alt="Extension Interface">
+<p><em>Main extension popup showing XP tracking and controls</em></p>
+</td>
+<td width="50%">
+<img src="images/level-up-animation.png" alt="Level Up Animation">
+<p><em>Epic level up celebration animation</em></p>
+<br>
+<img src="images/xp-bar-display.png" alt="XP Bar Display">
+<p><em>On-screen XP bar with level progression and XP drops</em></p>
+</td>
+</tr>
+</table>
 
 ## Installation
 
